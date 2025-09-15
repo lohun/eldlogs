@@ -124,7 +124,7 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
 
 // API Service
 class TripAPIService {
-  private static readonly BASE_URL = 'http://127.0.0.1:8000/api/trips/';
+  private static readonly BASE_URL = 'https://driverlog-kappa.vercel.app/api/trips/';
 
   static async createTrip(tripData: TripRequest): Promise<TripResponse> {
     console.log(tripData)
