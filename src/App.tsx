@@ -124,10 +124,9 @@ const appReducer = (state: AppState, action: AppAction): AppState => {
 
 // API Service
 class TripAPIService {
-  private static readonly BASE_URL = 'https://driverlog-kappa.vercel.app/api/trips/';
+  private static readonly BASE_URL = 'https://driverlog-dkqd.onrender.com/trips/';
 
   static async createTrip(tripData: TripRequest): Promise<TripResponse> {
-    console.log(tripData)
     const response = await fetch(this.BASE_URL, {
       method: 'POST',
       headers: {
